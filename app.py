@@ -31,7 +31,7 @@ def input_pdf_setup(uploaded_file):
         img_byte_arr = img_byte_arr.getvalue()
 
         pdf_parts = [{
-            "mimo_type":"image/jpeg",
+            "mime_type":"image/jpeg",
             "data":base64.b64encode(img_byte_arr).decode() ## encode to base64
 
         }]
